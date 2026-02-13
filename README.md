@@ -174,3 +174,13 @@ Index,AP1,AP2,AP3,AP4,AP5,AP6,AP7,AP8,AP9,AP10
 - 김보성 (Boseong Kim)  
 - GitHub: [GitBosung](https://github.com/GitBosung)
 
+
+
+
+위의 앱을 수정 AWS S3 클라우드에 수집한 데이터를 저장 가능
+
+앱 내에서 사용자 ID 설정 가능
+
+사용자 ID를 설정한 상태로 데이터를 수집하면 CSV 파일에 사용자 ID도 같이 파일명에 기재됨
+
+사용자 ID가 있으면 S3에 사용자 ID 명으로된 폴더 생성, 그 안에 저장
