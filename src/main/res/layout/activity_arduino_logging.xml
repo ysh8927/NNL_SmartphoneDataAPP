@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/tvArduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arduino Sensor Logging"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- BLE 연결 버튼 -->
+    <Button
+        android:id="@+id/btnConnectBLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to Arduino BLE"
+        android:layout_below="@id/tvArduino"
+        android:layout_marginTop="30dp" />
+
+    <!-- 로깅 시작 버튼 -->
+    <Button
+        android:id="@+id/btnStartLogging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Logging"
+        android:layout_below="@id/btnConnectBLE"
+        android:layout_marginTop="16dp" />
+
+    <!-- 로깅 종료 버튼 -->
+    <Button
+        android:id="@+id/btnStopLogging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Logging"
+        android:layout_below="@id/btnStartLogging"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStopLogging"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvBLELog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLE 연결 로그 출력"
+            android:textSize="14sp"
+            android:background="#EEEEEE"
+            android:minHeight="100dp" />
+
+    </ScrollView>
+
+</RelativeLayout>

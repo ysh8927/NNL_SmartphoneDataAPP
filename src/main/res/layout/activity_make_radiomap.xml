@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- 파일명 입력란 -->
+        <EditText
+            android:id="@+id/etFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="파일명 입력 (예: 3f_radiomap)"
+            android:inputType="text" />
+
+        <!-- 위치 인덱스 입력란 -->
+        <EditText
+            android:id="@+id/etIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="위치 인덱스 입력"
+            android:inputType="text"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="측정 시작" />
+
+
+        <!-- 여백 추가: 위 입력란들과 버튼 사이에 충분한 공간을 둡니다 -->
+
+        <!-- 측정 시작 버튼 (하단으로 배치) -->
+
+        <!-- CSV 저장 및 메인으로 돌아가기 버튼 -->
+
+        <!-- 측정 상태 표시 TextView -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="상태: 대기중"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="마지막 저장 좌표: -"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:background="#EEEEEE"
+            android:layout_marginTop="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CSV 저장 및 메인으로" />
+
+    </LinearLayout>
+</ScrollView>

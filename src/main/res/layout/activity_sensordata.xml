@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 수집 상태 표시 -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상태: 대기 중"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- 수집 시작 -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수집 시작"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 수집 중지 -->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수집 중지"
+        android:layout_marginBottom="8dp"
+        android:enabled="false"/>
+
+    <!-- 데이터 저장 -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="데이터 저장"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"/>
+
+    <!-- OSMDroid MapView -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/osmMap"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+</LinearLayout>
